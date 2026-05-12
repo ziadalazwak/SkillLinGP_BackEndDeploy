@@ -39,7 +39,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend", policy =>
     {
         policy
-            .WithOrigins(builder.Configuration["FrontendUrl:Docker"])
+            .WithOrigins(builder.Configuration["FrontendUrl:local"])
             .AllowAnyHeader()
             .AllowAnyMethod().AllowCredentials(); 
     });
