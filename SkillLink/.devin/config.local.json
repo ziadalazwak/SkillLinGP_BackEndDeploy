@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Exec(find)",
+      "Exec(mkdir)",
+      "Exec(dotnet build)",
+      "Exec(dotnet ef)",
+      "Exec(dotnet test)",
+      "Exec(git add)",
+      "Exec(git commit)",
+      "Exec(cat)",
+      "Exec(grep)",
+      "Exec(sqlcmd)",
+      "Exec(git status)"
+    ]
+  }
+}
