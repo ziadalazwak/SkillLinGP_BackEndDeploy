@@ -13,7 +13,7 @@ namespace SkillLink.Infrastructure.Services
         public LocalEmbeddingService(HttpClient httpClient, IConfiguration configuration)
         {
             _httpClient = httpClient;
-            _endpointUrl = configuration["EmbeddingSettings:Url:Docker"] ?? "http://python-service:5000/embed";
+            _endpointUrl = configuration["EmbeddingSettings:Url"] ?? "http://python-service:5000/embed";
         } 
 
         public async Task<float[]> GenerateEmbeddingAsync(string text, CancellationToken cancellationToken = default)
